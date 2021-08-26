@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Business Call Analysis</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='result.css')}}">
+</head>
+<body>
+ <center><span id="heading" >Call Analysis</span></center>
+	<center><ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#">Analysis</a></li>
+	  <li><a href="#about">About</a></li>
+	</ul></center>
+	<center><span id="heading1">Total Analysis</span></center>
+	<div id="CompleteSpeak1">
+		<center><h2>Speaker 1</h2></center>
+		<h3>Frequent Keywords Used By the Speaker 1:</h3>
+		<br>
+		{% for i in countspeak1 %}
+		 
+		 keyword-{{loop.index}}:<span id="key">{{i[0]}}<br></span>Keyword-polarity:<span id="value">{{i[1]}}</span><br><br>
+		 
+		{% endfor %}
+		<h3>Bar Graph of Frequent Keywords By The Speaker 1:</h3>
+		<img src="data:image/png;base64,{{freqplot1}}"><br>
+		<h3>Adjectives used by Speaker 1</h3>
+		<br>
+		{%for j in adjadv1 %}
+		word:{{ j[0] }}:-{{j[1]}}<br>
+		{% endfor %}<br>
+		<h3>Total Success rate </h3>
+		<img src="data:image/png;base64,{{aggresult}}"><br>
+		<h3>Polarity</h3><br>
+		{% for key,value in sentspeak1.items() %}
+		{{ key }}:{{ value }}<br><br>
+		{% endfor %}<br>
+		<h3>Overall</h3>
+		<img src="data:image/png;base64,{{sentplot}}">
+	</div>
+	<div id="CompleteSpeak2">
+		<center><h2>Speaker 2</h2></center>
+		<h3>Frequent Keywords Used By the Speaker 2:</h3>
+		<br>
+		{% for i in countspeak2 %}
+		 
+		 keyword-{{loop.index}}:<span id="key">{{i[0]}}<br></span>Keyword-polarity:<span id="value">{{i[1]}}</span><br><br>
+		 
+		{% endfor %}
+		<h3>Bar Graph of Frequent Keywords By The Speaker 2:</h3>
+		<img src="data:image/png;base64,{{freqplot2}}"><br>
+		<h3>Adjectives used by Speaker 2</h3>
+		<br>
+		{%for j in adjadv2 %}
+		word:{{ j[0] }}:-{{j[1]}}<br>
+		{% endfor %}<br>
+		<h3>Total Success rate </h3>
+		<img src="data:image/png;base64,{{aggresult2}}"><br>
+		<h3>Polarity</h3><br>
+		{% for key,value in sentspeak2.items() %}
+		{{ key }}:{{ value }}<br><br>
+		{% endfor %}<br>
+		<h3>Overall</h3>
+		<img src="data:image/png;base64,{{sentplot2}}">
+	</div>
+</body>
+</html>

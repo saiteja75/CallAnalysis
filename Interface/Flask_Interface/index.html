@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Glocal | Sales Intelligence</title>
+    <link rel="shortcut icon" href="index.ico">
+    <!--Bootstrap Includes-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="main_nav" style="padding: 0.5rem; font-size: 1.3rem; border-bottom: 0.4rem solid #e67e22;">
+        <a class="navbar-brand" href="#" style="display: inline-block;">
+          <img src="logo.png" alt="Sales Org" style="float: left;" width="80" height="50">
+          <h2 style="float: left;">SalesOrg</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav navbar-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Analysis</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Evaluate</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Video Introduction-->
+      <div id="banner">
+          
+          <video id="salesBgVideo" preload="true" autoplay loop muted style="border-bottom: 0.4rem solid #1b5eac;">
+            <source src="backie_intro.mp4" type="video/mp4">
+          </video>
+          <h1 class="intro_title" data-aos="fade-right">
+              fastrack your way to the growth
+          </h1>
+          <h3 class="intro_tag" data-aos="fade-left">
+              Fuel Your Revenue Engine with Accurate & Actionable Data on Your Target Buyer 
+          </h3>
+          <button class="btn btn-primary demo_use" type="button" data-aos="fade-up">Request a demo</button>
+      </div>
+
+      <div class="description_block">
+          <h2 class="description_title text-center">
+              THE PRODUCTIVE B2B MARKETING & SALES INTELLIGENCE SOLUTION, PROUDLY USED
+          </h2>
+
+          <!-- Main Card blocks-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-1">
+
+              </div>
+              <div class="col-md-3 desc_card text-center" style="margin-left: 3rem;" data-aos="fade-left">
+                <h3 class="card_block_title">
+                  FOR MONITORING
+                </h3>
+                <!--Horizontal line-->
+                <hr class="blue_line" width="80%"/>
+                <p class="card_description">
+                  Accelerate lead generation, improve the health of your database, and execute Account-Based Marketing at scale
+                </p>
+                <button class="btn_more" type="button">Learn more ></button>
+              </div>
+
+              <div class="col-md-3 desc_card text-center" data-aos="fade-up">
+                  <h3 class="card_block_title">
+                    FOR SALES
+                  </h3>
+                  <!--Horizontal line-->
+                  <hr class="green_line" width="80%"/>
+                  <p class="card_description">
+                    Close more deals faster by finding, connecting, and selling to your target buyer with the right message at the right time
+                  </p>
+                  <button class="btn_more" type="button">Learn more ></button>
+              </div>
+
+              <div class="col-md-3 desc_card text-center" data-aos="fade-right">
+                  <h3 class="card_block_title">
+                    FOR ANALYSIS
+                  </h3>
+                  <!--Horizontal line-->
+                  <hr class="orange_line" width="80%"/>
+                  <p class="card_description">
+                    Build your recruiting pipeline by finding and connecting to passive candidates with the ideal skillsets
+                  </p>
+                  <button class="btn_more" type="button">Learn more ></button>
+              </div>
+              <div class="col-md-2">
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="outsourcing text-center">
+          <h2 class="outsource_title">
+            OUTPACE YOUR COMPETITORS
+          </h2>
+          <h4 class="outsource_formula">
+            Real Data + Analysis = Faster Revenue Growth
+          </h4>
+
+          <!-- Main video-->
+          <video id="outsourceData" preload="true" loop muted controls width="800" height="600" class="video_frame">
+            <source src="Real People, Real Data - The DiscoverOrg Experience.mp4" type="video/mp4">
+          </video>
+          
+      </div>
+
+      <!-- Processing the data-->
+      <div class="container-fluid" id="processData">
+        <div class="process_demo text-center">
+          <h2 class="process_title">
+            Demo Processing
+          </h2>
+          <h4 class="upload_file_label">Upload your file here</h4>
+          <input type="file" class="upload_file_choose">
+          <button class="btn btn-secondary upload_file">Upload</button>
+        </div>
+      </div>
+
+
+    <!-- AOS Script initialize to get scroll animations-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+Parts of Speech
+There are Five parts of speech which helps us to form a meaningful sentence which is a grammatically correct
+Five parts of speech as follows:
+								Noun:
+which is generally defined as name,place,animal or a thing.
+There are two types of nouns:
+1)Proper noun:which defines Name,Place(FIRST LETTER SHOULD BE CAPITALIZED)
+2)Common noun:which defines things
+(NN IS TAG PYTHON NLTK)
+								Verb:
+which describes action and state of being
+Eg:run,walk
+things which can be easily visuallized
+words which are verbs but does'nt describe about action
+Eg:is,am,was,were(EXPRESS THE IDENTITY)
+(VB IS TAG PYTHON NLTK)
+								Pronoun:
+Words used instead of noun
+Eg:he,she,them,those
+								Adjective:
+Which provides more information about noun
+Eg:tall,skinny
+(JJ	IS TAG PYTHON NLTK)
+								Adverb:
+which provide more information about verb
+Eg:Slowly
+(CC	coordinating conjunction,IN	preposition/subordinating conjunction)
+
